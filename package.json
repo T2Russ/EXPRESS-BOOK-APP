@@ -1,0 +1,29 @@
+{
+  "name": "express-book-app",
+  "version": "1.0.0",
+  "description": "An example application for Express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org a-russ --project bookstore-api-russ  && sentry-cli sourcemaps upload --org a-russ --project bookstore-api-russ "
+  },
+  "author": "Antonia Russ",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/cli": "^2.38.2",
+    "@sentry/node": "^8.38.0",
+    "@sentry/profiling-node": "^8.38.0",
+    "@sentry/tracing": "^7.114.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-oauth2-jwt-bearer": "^1.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^11.0.2",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.7"
+  }
+}
